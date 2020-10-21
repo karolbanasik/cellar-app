@@ -3,7 +3,7 @@ from remi import start, App
 
 class Presentation(App):
     def __init__(self, *args):
-        super(MyApp, self).__init__(*args)
+        super(Presentation, self).__init__(*args)
 
     def main(self):
         container = front_provider.VBox(width=120, height=100)
