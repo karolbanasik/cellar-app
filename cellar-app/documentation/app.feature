@@ -11,12 +11,12 @@ Feature: cellar app
     And optional target amount of alcohol
     When I confirm my input
     Then recipe can be looked up
-    And if <possible?>, return <what> target amount in liters
+    And if <posible?>, return <what> target amount in liters
     And recipe can be corrected
     And recipe can be deleted
     
     Examples:
-      |possible?|what|
+      |posible?|what|
       | possible|calculated|
       | not possible|place to input|
     
@@ -48,7 +48,7 @@ Feature: app uses calendar
     And I can update or delete action
     
     Examples:
-      |When|
+      |when|
       | preceeding action|
       | start|
     
