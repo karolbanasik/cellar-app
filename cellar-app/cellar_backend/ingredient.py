@@ -16,3 +16,8 @@ class Ingredient:
 
         except AttributeError:
             self.amount = amount
+
+    def list_representation(self):
+        #TODO: clean it
+        parameters_values  = [self.name, self.amount, self.unit]
+        return parameters_values
