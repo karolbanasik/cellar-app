@@ -1,6 +1,5 @@
 import unittest
 from cellar_backend.recipe import Recipe
-from cellar_backend.ingredient import Ingredient
 from parameterized import parameterized
 
 class RecipeIngredientsTests(unittest.TestCase):
@@ -42,6 +41,8 @@ class RecipeIngredientsTests(unittest.TestCase):
         assert self.ingredient_unit_present_on_list(name, expected_unit, ingredients)
 
 
+
+
     def ingredient_name_present_on_list(self, value, list):
         for element in list:
             if element.name == value:
@@ -57,3 +58,5 @@ class RecipeIngredientsTests(unittest.TestCase):
         for element in list:
             if element.name == name:
                 return element.unit == unit
+
+
